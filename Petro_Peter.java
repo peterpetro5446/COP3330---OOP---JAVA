@@ -86,7 +86,7 @@ public class Petro_Peter {
 			userInput = userInput.toLowerCase(); // after keyword bypass, convert all to lowercase in order to avoid weird names.
 			userInput = Character.toUpperCase(userInput.charAt(0)) + userInput.substring(1); // then change string[0] to uppercase.
 			System.out.print("Write price ");
-			double itemPrice = userIn.nextDouble(); // THIS WILL THROW ERROR IF USER GIVES CHAR BUT ERROR HANDLING WASN'T PART OF ASSIGNMENT (HASNEXTDOUBLE WOULD FIX IT) don't want to get negative grade for altering output to ask for another double input if user is monkey
+			double itemPrice = userIn.nextDouble(); // THIS WILL THROW ERROR IF USER GIVES CHAR BUT ERROR HANDLING WASN'T PART OF ASSIGNMENT (HASNEXTDOUBLE WOULD FIX IT) don't want to get negative grade for different output
 			totalAmount = totalAmount + taxCalc(userInput,itemPrice);
 			System.out.println("item number " + itemNumber + " " + userInput + " " + taxCalc(userInput,itemPrice));
 			getInput(userInput.toUpperCase());  // recursive call. 
